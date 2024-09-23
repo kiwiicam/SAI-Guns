@@ -1,0 +1,61 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@font-face {
+    font-family: 'didot';
+    src: url('http://localhost:3000/DidotBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.bg{
+    font-family: "didot", sans-serif;
+    position: relative;
+    background-image: url("http://localhost:3000/homepagebg.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.bg::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(96,89,64, 0.7);
+    content: "";
+    z-index: 2;
+}
+.text{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+.text h1{
+    font-size: 1000%;
+}
+.text h2{
+    font-size: 200%;
+}
+.address{
+    font-size: 100%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    justify-content: flex-end;
+    color: white;
+    z-index: 3;
+}
+.address:hover{
+    cursor: pointer;
+}

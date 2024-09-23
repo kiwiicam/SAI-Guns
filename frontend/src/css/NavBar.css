@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'didot';
+    src: url('http://localhost:3000/DidotBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.nav {
+    
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+}
+
+.navBarItems {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content:center;
+    align-items: center;
+    gap: 2.5%;
+}
+
+.item {
+    color: white;
+    font-size: 14px;
+    font-family: "didot", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+    height: 5vh;
+    background-color: rgba(96, 89, 64, 0.7);
+    transition: 0.2s ease;
+}
+.item:hover {
+    cursor: pointer;
+    height: 100%;
+    width: 15%;
+}
